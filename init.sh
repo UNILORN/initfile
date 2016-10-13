@@ -13,11 +13,6 @@ sudo apt -y install git
 sudo apt -y install libapache2-mod-php7.0
 
 
-echo "################### fish shell install ###################"
-sudo apt -y install fish
-fish curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-fisher dartfish
-
 echo "################### composer install #####################"
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
