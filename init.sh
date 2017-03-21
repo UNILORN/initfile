@@ -20,6 +20,6 @@ composer config -g repositories.packagist composer https://packagist.jp
 
 
 
-sydo apt -y upgrade
+sudo apt -y upgrade
 
 
