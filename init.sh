@@ -11,6 +11,7 @@ sudo apt -y install apache2
 sudo apt -y install ruby
 sudo apt -y install git
 sudo apt -y install libapache2-mod-php7.0
+sudo apt -y install npm
 
 
 echo "################### composer install #####################"
