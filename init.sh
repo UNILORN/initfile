@@ -13,6 +13,10 @@ sudo apt -y install git
 sudo apt -y install libapache2-mod-php7.0
 sudo apt -y install npm
 
+sudo apt -y install curl 
+sudo apt -y install fish
+
+# curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
 
 echo "################### composer install #####################"
 curl -sS https://getcomposer.org/installer | php
