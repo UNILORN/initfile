@@ -5,12 +5,15 @@ echo "##########################################################"
 echo ""
 echo "####################### apt update #######################"
 sudo apt update
+sudo apt -y install software-properties-common
+
 sudo apt -y install curl wget
 sudo apt -y install vim
 
 # PHP Install
 sudo add-apt-repository ppa:ondrej/php
-sudo apt -y install php7.2 php7.2-mysql php7.2-dev php7.2-fpm php7.2-mbstring
+sudo apt update
+sudo apt -y install php7.2 php7.2-xml php7.2-mysql php7.2-dev php7.2-fpm php7.2-mbstring
 
 sudo apt -y install mysql-server mysql-client
 sudo apt -y install apache2
