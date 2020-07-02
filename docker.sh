@@ -1,6 +1,6 @@
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -12,8 +12,14 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo gpasswd -a $USER docker
+sudo usermod -g docker $USER
 sudo systemctl restart docker
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+
+echo " ================== NEXT COMMAND ====================== "
+echo " $ exit"
+echo " Restart terminal"
+echo " ================== END          ====================== "
